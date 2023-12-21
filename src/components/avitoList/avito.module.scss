@@ -1,0 +1,62 @@
+.listWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 500px;
+    height: 500px;
+    border-radius: 8px;
+    background-color: #FFFDFF;
+    article {
+        padding: 15px;
+    }
+    a {
+        font-weight: 600;
+        font-size: 20px;
+        color: #2d4f8f;
+        text-decoration: none;
+        margin-top: 10px;
+        transition: 0.2s all;
+        &:hover {
+            color: #494747;
+        }
+    }
+    &__price {
+        font-weight: 600;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    &__address, &__geo {
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000;
+        margin-top: 10px;
+    }
+    &__geo {
+        margin-top: 5px;
+    }
+    &__descr {
+        font-weight: 400;
+        font-size: 16px;
+        color: #585858;
+        margin-top: 10px;
+        height: 58px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__date {
+        font-weight: 400;
+        font-size: 14px;
+        color: #000000;
+        margin-top: 15px;
+    }
+}

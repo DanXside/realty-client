@@ -1,10 +1,16 @@
 import React from "react";
-import styles from './app.module.scss';
+import './app.scss';
+import Header from "./components/UI/header/header";
+import { BrowserRouter } from "react-router-dom";
+import Realty from "./components/realties/realties";
 
 function App() {
   return (
-    <div className={styles.titleMain}>
-      Hi
+    <div>
+      <BrowserRouter>
+        <Header />
+        <Realty />
+      </BrowserRouter>
     </div>
   );
 }
